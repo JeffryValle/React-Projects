@@ -1,2 +1,2 @@
 # React-Projects
-Pequeños proyectos de JavaScript utilizando React
+Primeros pasos con JavaScript utilizando React
