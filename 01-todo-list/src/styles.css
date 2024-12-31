@@ -1,0 +1,50 @@
+body {
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%) 35%, rgba(0,212,255,1) 100%;
+}
+
+h1 {
+    color: white;
+}
+
+.todoapp {
+
+    padding: 1rem 0 0 2rem;
+}
+
+.todo-list {
+    width: auto;
+    height: 60vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin: 0;
+    padding: 0;
+}
+
+
+.todo-Item {
+    /* padding: 10%; */
+    border-radius: 40px;
+    border-color: #0093E9;
+    border-style: outset;
+    /* margin: 0.1rem; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    margin: 0;
+    .bi {
+        color: #f60000;
+    }
+    
+    .bb-in{
+        color: #75ff52;
+    }
+    .bb-out{
+        color: #75ff52;
+    }
+}
