@@ -1,0 +1,240 @@
+.app {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Izquierda */
+.sidebar {
+    width: 300px;
+    height: 100vh;
+    /* background-image: linear-gradient(to top, #013794 0%, #042afe 100%); */
+    background-color: rgba(0, 0, 128, 0.8);
+}
+
+@media (max-width: 345px) { 
+    .sidebar {
+        width: 80px;
+        height: 100vh;
+    }
+}
+
+/* Derecha */
+.derecha {
+    width: calc(100% - 300px);
+    height: 100vh;
+    flex-direction: row;
+}
+
+.icons {
+    display: flex;
+    column-gap: 3rem;
+}
+.icon {
+    all: unset;
+
+}
+.icon:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    filter: invert(60%);
+
+}
+
+
+.navbar {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(0, 0, 128, 0.453);
+    padding: 0 3rem;
+}
+.carrito {
+    all: unset;
+}
+.carrito:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    filter: invert(60%);
+}
+
+.content {
+    width: 100%;
+    height: 90vh;
+    background-color: rgba(0, 0, 128, 0.453);
+    position: relative;
+}
+
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    color: white;
+
+    .contenedor1 {
+        padding-top: 1rem;
+        
+        
+    }
+    .contenedor2 {
+        display: flex;
+        flex-direction: column;
+        padding-top: 3rem;
+        gap: 3rem;
+        font-size: 1.2rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 600;
+        width: 100%;
+        
+    }
+    
+}
+.btna {
+    all: unset;
+    padding: 0.6rem 2rem;
+    border: none;
+}
+.btna:hover {
+    transform: translate3d(0, -.125rem, 0);
+    font-size: 1.6rem;
+}
+
+
+.label {
+    font-size: 2.8rem;
+}
+
+a {
+    all: unset;
+    color: white;
+    
+}
+a:hover {
+    color: rgb(2, 207, 50);
+}
+
+.active {
+    color: rgb(2, 207, 50);
+    padding-left: 2rem;
+}
+
+/* Card group*/
+
+.grupo {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    gap: 2rem 1rem;
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    justify-content: center;
+}
+
+@media (max-width: 2000px) { 
+    .grupo{ 
+        gap: 14rem 1rem;
+        padding-bottom: 12rem;
+        justify-content: center;
+    }
+}
+@media (max-width: 1400px) { 
+    .grupo{ 
+        gap: 12rem 1rem;
+        padding-bottom: 12rem;
+        justify-content: center;
+    }
+}
+@media (max-width: 1000px) { 
+    .grupo{ 
+        gap: 12rem 1rem;
+        padding-bottom: 12rem;
+        justify-content: center;
+    }
+}
+@media (max-width: 768px) { 
+    .grupo{ 
+        position: relative;
+        justify-content: center;
+    }
+}
+
+.title {
+    font-size: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.prize {
+    font-size: 1.5rem;
+    color: green;
+    padding: 0.5rem 0;
+}
+
+.carta {
+    width: 300px;
+    height: 25vh;
+    /* Sintaxis: box-shadow: desplazamientoX desplazamientoY difuminado extensión color; */
+    
+}
+
+.botones {
+    display: flex;
+    gap: 0.6rem;
+    align-items: flex-end;
+    .b2{
+        flex: 1;
+    }
+}
+
+/* Ventana modal */
+.titles{
+    display: flex;
+    justify-content: space-between;
+}
+
+.productos {
+    list-style: none;
+    display: flex;
+    /* justify-content: space-between; */
+    
+    li {
+        font-size: 1.2rem;
+        background-color: antiquewhite;
+        border: solid 1px rgba(0, 0, 0, 0.144);
+        padding: 0 0.5rem;
+
+    }
+}
+.act {
+    text-align: end;
+}
+
+.a1 {
+    flex: 0.5;
+}
+.a2 {
+    flex: 1;
+}
+.a3 {
+    display: flex;
+    justify-content: end;
+    flex: 0.5;
+    
+}
+.a4 {
+    flex: 0.2;
+    /* padding: 0.5rem 1rem; */
+    margin: 0.2rem;
+}
