@@ -1,0 +1,108 @@
+.proyectos {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.5)), 
+      url("../img/fondo-01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 95vh;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+}
+
+.proyectos-contenido{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.proyectos-title {
+    height: 25vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+        color: #fff;
+    }
+ }
+
+/* From Uiverse.io by SteveBloX */ 
+.proyectos-contenido-card {
+    box-sizing: border-box;
+    width: 220px;
+    height: 220px;
+    background: #222;
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    row-gap: 0.5rem;
+    color: #fff;  
+  }
+  .proyectos-contenido-card {
+      img {
+        height: 20vh;
+      }
+  }
+  
+  .proyectos-contenido-card:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+  }
+  
+  .proyectos-contenido-card:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
+
+  @media (620px <= width <= 960px) {
+    .proyectos {
+      height: 90vh;
+    }
+    .proyectos-contenido {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .proyectos-contenido-card {
+      height: 180px;
+      img {
+        height: 15vh;
+      }
+    }
+    .proyectos-title {
+      height: 15vh;
+    }
+    h1 {
+      font-family: "Raleway", serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 2.4rem;
+    }
+  }
+
+@media (width <= 620px) {
+  .proyectos-contenido{
+    height: 30vh;
+    display: flex;
+    row-gap: 0.4rem;
+  }
+  .proyectos-contenido-card {
+    height: 150px;
+    width: 150px;
+  }
+}
